@@ -55,7 +55,7 @@ To classify XOR, the input layer must consist of neurons corresponding to the in
 
 The Sigmoid function is used as the activation function. It approaches 1 as the input becomes more positive and 0 as the input becomes more negative.
 
-```bash
+```python
 # Define the neural network model
 model = tf.keras.Sequential([
     # Fully connected layer with sigmoid activation
