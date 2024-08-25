@@ -3,7 +3,7 @@
 One of the most prominent limitations of a linear model is its inability to solve the XOR problem. While a linear model can handle AND and OR operations, it fails with the XOR operation. In the study of AI, it is commonly known that a Multilayer Perceptron (MLP) can solve the XOR problem. This document explores how this is achieved.
 
 <div align="center">
-<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/Truth-table-XOR-gate.png" width="200">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/img/Truth-table-XOR-gate.png" width="200">
 
 **Figure 1**: Truth table XOR gate
 </div>
@@ -15,7 +15,7 @@ When classifying data, a linear model can only create a linear boundary, effecti
 This limitation of the perceptron was mathematically demonstrated by Marvin Minsky and Seymour Papert in their book *Perceptrons: An Introduction to Computational Geometry* (1969).
 
 <div align="center">
-<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/linear_classification.png" width="500">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/img/linear_classification.png" width="500">
 
 **Figure 2**: Linear classification for AND and OR gates, but not for the XOR gate
 </div>
@@ -32,7 +32,7 @@ Conceptually, the XOR operator can be represented by the intersection of two log
 2. **(x1 OR x2)** - A line representing this operation.
 
 <div align="center">
-<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/xor_classification.png" width="300">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/img/xor_classification.png" width="300">
 
 **Figure 3**: XOR classification with two linear lines
 </div>
@@ -46,7 +46,7 @@ The intersection of these two lines (AND operation) yields a result of 1 where t
 To classify XOR, the input layer must consist of neurons corresponding to the input pairs (0,0), (0,1), (1,0), and (1,1). Therefore, the input layer contains two neurons. The hidden layer needs at least two neurons to form the two lines necessary for classification. These neurons are fully connected (FC) and use weights, biases, and the Sigmoid activation function.
 
 <div align="center">
-<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/xor_nn.png" width="400">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/XOR/img/xor_nn.png" width="400">
 
 **Figure 3**: Neural network architecture for the XOR classification
 </div>
