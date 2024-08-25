@@ -107,7 +107,7 @@ The figure visualizes how the activation function influences the learning proces
 
 <div align="center">
     
-<img src="https://github.com/kapshaul/DeepLearning/blob/master/img/sinefunction_training_animation.gif" width="600">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/img/sinefunction_training_animation2.gif" width="600">
 
 **Figure 3**: Training a sine function
 
