@@ -42,7 +42,6 @@ This formulation captures the essential operations in a simple feedforward neura
 
 ## Table of Contents
 - [1. Sine Function Prediction](#1-sine-function-prediction-a-simple-introduction-to-deep-learning)
-- [Getting Started](#getting-started)
 
 ## 1. Sine Function Prediction: A Simple Introduction to Deep Learning
 
@@ -114,6 +113,3 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(1)
 ])
 ```
-
-## Getting Started
-Here’s how to get started.
