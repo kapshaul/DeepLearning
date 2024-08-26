@@ -40,6 +40,10 @@ where,
 
 This formulation captures the essential operations in a simple feedforward neural network with one hidden layer.
 
+## Table of Contents
+- [1. Sine Function Prediction](#1-sine-function-prediction-a-simple-introduction-to-deep-learning)
+- [Getting Started](#getting-started)
+
 ## 1. Sine Function Prediction: A Simple Introduction to Deep Learning
 
 This example is designed to provide a basic understanding of deep learning concepts by walking through the process of predicting a sine function using a neural network. We'll explore how to set up a simple model, understand its components, and see it in action using both PyTorch and TensorFlow.
@@ -110,3 +114,6 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(1)
 ])
 ```
+
+## Getting Started
+Here’s how to get started.
