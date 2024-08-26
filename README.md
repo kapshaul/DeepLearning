@@ -24,7 +24,7 @@ Deep learning is a powerful technique within the broader field of machine learni
 
 #### **Mathematical  Structure**
 
-A neural network can be mathematically represented using matrix multiplication as follows:
+A neural network can be mathematically represented using matrix multiplication as follows,
 
 $$
 Y = W_2 \sigma(W_1 X^T + b_1) + b_2
