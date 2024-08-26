@@ -56,7 +56,7 @@ This example is designed to provide a basic understanding of deep learning conce
 
 </div>
 
-Figure 2 visualizes how the activation function influences the learning process of the neural network when approximating the sine function. The curve shown highlights key points where the network has learned the underlying pattern of the sine wave. These specific points, where the curve changes more noticeably, correspond to activation points where the ReLU function behaves similarly to an "if" statement. In these regions, the ReLU activation either allows the signal to pass through or blocks it, depending on whether the input is positive or negative, thus shaping the curve accordingly.
+Figure 2 visualizes how the *activation function* influences the learning process of the neural network when approximating the sine function. The curve shown highlights key points where the network has learned the underlying pattern of the sine wave. These specific points, where the curve changes more noticeably, correspond to activation points where the ReLU function behaves similarly to an "if" statement. In these regions, the ReLU activation either allows the signal to pass through or blocks it, depending on whether the input is positive or negative, thus shaping the curve accordingly.
 
 ### 1.1. Key Concepts Explained
 
