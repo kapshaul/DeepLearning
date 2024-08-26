@@ -46,7 +46,7 @@ This example is designed to provide a basic understanding of deep learning conce
 
 #### $\hspace{10pt}$ Why Sine Function Prediction?
 
-> Predicting the sine function is a classic problem that helps illustrate how neural networks work in a simple and intuitive way. Despite its simplicity, the sine function has enough complexity to demonstrate key deep learning concepts such as activation functions, training loops, and loss minimization.
+> Predicting the sine function is a classic problem that helps illustrate how neural networks work in a simple and intuitive way. Despite its simplicity, the sine function has enough complexity to demonstrate key deep learning concepts such as activation functions.
 
 <div align="center">
     
