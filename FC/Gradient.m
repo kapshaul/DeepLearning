@@ -65,8 +65,7 @@ for epoch = 1:num_epochs
         % Compute error
         error = y_true - y_pred;
 
-        % Compute partial derivatives manually (gradient descent)
-        % Derivative of loss with respect to output (output layer)
+        % Compute gradients manually
         % Gradients for W3 and b3
         dW3 = 2/batch_size * (error) * ReLU(W2 * ReLU(W1 * x + b1) + b2)';
         db3 = 2/batch_size * sum((error), 2);
