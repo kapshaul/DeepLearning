@@ -63,7 +63,7 @@ for epoch = 1:num_epochs
         y_pred = W3 * ReLU(W2 * ReLU(W1 * x + b1) + b2) + b3;
 
         % Compute error
-        error = y_true - y_pred;
+        error = y_pred - y_true;
 
         % Compute gradients manually
         % Gradients for W3 and b3
@@ -79,14 +79,14 @@ for epoch = 1:num_epochs
         db1 = 2/batch_size * sum((W2' * (W3' * (error) .* ReLU_deriv(W2 * ReLU(W1 * x + b1) + b2))) .* ReLU_deriv(W1 * x + b1), 2);
 
         % Update weights and biases
-        W3 = W3 + learning_rate * dW3;
-        b3 = b3 + learning_rate * db3;
+        W3 = W3 - learning_rate * dW3;
+        b3 = b3 - learning_rate * db3;
 
-        W2 = W2 + learning_rate * dW2;
-        b2 = b2 + learning_rate * db2;
+        W2 = W2 - learning_rate * dW2;
+        b2 = b2 - learning_rate * db2;
 
-        W1 = W1 + learning_rate * dW1;
-        b1 = b1 + learning_rate * db1;
+        W1 = W1 - learning_rate * dW1;
+        b1 = b1 - learning_rate * db1;
     end
     % Shuffle data
     data_train = data_train(randperm(size(data_train, 1)), :);
@@ -96,7 +96,7 @@ for epoch = 1:num_epochs
     % Print the validation loss every 10 epochs
     if mod(epoch, 10) == 0
         y_pred = W3 * ReLU(W2 * ReLU(W1 * x_valid' + b1) + b2) + b3;
-        loss_valid = loss(y_pred-y_valid') / size(y_valid, 1);
+        loss_valid = loss(y_valid'-y_pred) / size(y_valid, 1);
         fprintf('Epoch %d, Validation Loss: %.4f\n', epoch, loss_valid);
     end
 end
