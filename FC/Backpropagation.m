@@ -73,8 +73,7 @@ for epoch = 1:num_epochs
         % Compute loss
         error = y_true - y_pred;
 
-        % Compute partial derivatives manually (gradient descent)
-        % Derivative of loss with respect to output (output layer)
+        % Compute for backpropagation
         delta3 = 2/batch_size * (error);
 
         % Gradients for W3 and b3
