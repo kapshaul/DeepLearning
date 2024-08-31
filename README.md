@@ -48,13 +48,13 @@ To optimize the neural network, we need to compute the gradients of the loss fun
 
 $\hspace{20pt}\frac{dJ}{d\hat{Y}} = \frac{2}{N} (\hat{Y} - Y)$
 
-Derivation the gradients for the parameters in the final layer, $W_3$ and $b_3$,
+We can derive the gradients for the parameters in the output layer, $W_3$ and $b_3$,
 
 $\hspace{20pt}\frac{dJ}{dW_3} = \frac{2}{N} (\hat{Y} - Y) \sigma(W_2 \sigma(W_1 X^T + b_1) + b_2)^T$
 
 $\hspace{20pt}\frac{dJ}{db_3} = \frac{2}{N} \sum_{i=1}^{N}{\hat{y}_i - y_i}$
 
-The gradients with respect to the second layer's parameters, $W_2$ and $b_2$,
+The gradients with respect to the second hidden layer's parameters, $W_2$ and $b_2$,
 
 $\hspace{20pt}\frac{dJ}{dW_2} = \frac{2}{N} (W_3^T (\hat{Y} - Y)) \circ \sigma\`(W_2 \sigma(W_1 X^T + b_1) + b_2) \sigma(W_1 X^T + b_1)^T$
 
