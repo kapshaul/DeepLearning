@@ -87,7 +87,7 @@ db1 = 2/batch_size * sum((W2' * (W3' * (error) .* ReLU_deriv(W2 * ReLU(W1 * x + 
 
 Backpropagation is computationally efficient because it leverages previously computed gradients and systematically applies the chain rule, avoiding the need to calculate each parameter's gradient individually from scratch.
 
-Consider the forward pass through each layer with the corresponding activation function, expressed as follows:
+Consider the forward pass through each layer, expressed as follows:
 
 $$
 z_1 = W_1 X^T + b_1
