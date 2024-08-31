@@ -1,6 +1,6 @@
 # Deep Learning Basic
 
-Deep learning is a powerful technique within the broader field of machine learning, where models known as neural networks are used to learn from data. These networks can uncover complex relationships and patterns, making them ideal for tasks such as image recognition, natural language processing, and, in our case, function approximation.
+Deep learning is a powerful technique within the broader field of machine learning, where models known as neural networks are used to learn from data. These networks can uncover complex relationships and patterns, making them ideal for tasks such as image recognition, natural language processing, and function approximation.
 
 #### $\hspace{10pt}$ What is a Neural Network?
 
