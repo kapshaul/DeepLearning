@@ -10,7 +10,8 @@ This repository provides a detailed mathematical derivation of deep learning com
    1.2. [Gradients of Weights and Biases](#12-gradients-of-weights-and-biases)
 
    1.3. [Backpropagation](#13-backpropagation)
-   
+
+---
 
 ## 1. Fully Connected Layers
 
