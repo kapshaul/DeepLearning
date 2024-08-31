@@ -22,24 +22,6 @@ Deep learning is a powerful technique within the broader field of machine learni
 - **Hidden Layers:** These layers perform most of the work in the network. They apply activation functions to the input, transforming it in ways that enable the network to learn.
 - **Output Layer:** The final layer produces the network's prediction.
 
-#### **Mathematical  Structure**
-
-A neural network can be mathematically represented using matrix multiplication as follows,
-
-$$
-Y = W_2 \sigma(W_1 X^T + b_1) + b_2
-$$
-
-where,
-
-- $X \in \mathbb{R}^{n \times m}$ represents the input matrix.
-- $Y \in \mathbb{R}^{l \times n}$ represents the output matrix.
-- $W_1 \in \mathbb{R}^{k \times m}$ and $W_2 \in \mathbb{R}^{l \times k}$ are weight matrices corresponding to the connections between layers.
-- $b_1 \in \mathbb{R}^{k}$ and $b_2 \in \mathbb{R}^{l}$ are bias vectors for the respective layers.
-- $\sigma(\cdot)$ denotes the activation function, applied element-wise to the intermediate result.
-
-This formulation captures the essential operations in a simple feedforward neural network with one hidden layer.
-
 ## Table of Contents
 - [1. Sine Function Prediction](#1-sine-function-prediction-a-simple-introduction-to-deep-learning)
 - [2. XOR Problem](#2-xor-problem-with-deep-learning)
