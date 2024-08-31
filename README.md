@@ -2,9 +2,6 @@
 
 This repository provides a detailed mathematical derivation of deep learning components. The goal is to break down the complex mathematics underlying neural networks for better understanding and application.
 
-### 4. Table of Contents
-If the document is long, adding a Table of Contents at the beginning can help readers navigate.
-
 ## Table of Contents
 1. [Fully Connected Layers](#1-fully-connected-layers)
    
