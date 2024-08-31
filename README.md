@@ -85,27 +85,49 @@ db1 = 2/batch_size * sum((W2' * (W3' * (error) .* ReLU_deriv(W2 * ReLU(W1 * x + 
 
 ### 1.3. Backpropagation
 
-To begin, we first backpropagate $\frac{dJ}{d\hat{Y}}$,
+Backpropagation is computationally efficient because it leverages previously computed gradients and systematically applies the chain rule, avoiding the need to calculate each parameter's gradient individually from scratch.
+
+Consider the forward pass through each layer with the corresponding activation function, expressed as follows:
+
+$$
+z_1 = W_1 X^T + b_1
+$$
+
+$$
+z_2 = W_2 \sigma(z_1) + b_2
+$$
+
+$$
+\hat{Y} = W_3 \sigma(z_2) + b_3
+$$
+
+In the backpropagation process, we start by computing the gradients of the loss function.
+
+First, we backpropagate the gradient of the loss with respect to $\hat{Y}$, $\frac{dJ}{d\hat{Y}}$:
 
 $\hspace{20pt}\frac{dJ}{d\hat{Y}} = \frac{2}{N} (\hat{Y} - Y)$
 
-Since $\frac{d\hat{Y}}{dW_3} = \sigma(W_2 \sigma(W_1 X^T + b_1) + b_2)$, by chain rule, the gradients for $W_3$ and $b_3$,
+Given that $\frac{d\hat{Y}}{dW_3} = \sigma(z_2) = \sigma(W_2 \sigma(W_1 X^T + b_1) + b_2)$, we apply the chain rule to compute the gradients for $W_3$ and $b_3$.
 
 $\hspace{20pt}\frac{dJ}{dW_3} = \frac{dJ}{d\hat{Y}} \frac{d\hat{Y}}{dW_3}$
 
 $\hspace{20pt}\frac{dJ}{db_3} = \frac{2}{N} \sum_{i=1}^{N}{\hat{y}_i - y_i}$
 
-Backpropagate $\frac{dJ}{dz_2}$ to second hidden layer
+Second, we backpropagate the gradient of the loss with respect to $z_2$, $\frac{dJ}{dz_2}$:
 
-Since $\frac{dz_2}{dW_2} = \sigma(W_1 X^T + b_1)$ and $\frac{dJ}{dz_2} = (W_3^T \frac{dJ}{d\hat{Y}}) \circ \sigma\`(W_2 \sigma(W_1 X^T + b_1) + b_2)$, by chain rule, the gradients for $W_2$ and $b_2$,
+$\hspace{20pt}\frac{dJ}{dz_2} = (W_3^T \frac{dJ}{d\hat{Y}}) \circ \sigma\`(z_2)$
+
+Given that $\frac{dz_2}{dW_2} = \sigma(z_1)$, we apply the chain rule to compute the gradients for $W_2$ and $b_2$.
 
 $\hspace{20pt}\frac{dJ}{dW_2} = \frac{dJ}{dz_2} \frac{dz_2}{dW_2}$
 
 $\hspace{20pt}\frac{dJ}{db_2} = \sum_{i=1}^{N}\frac{dJ}{dz_2}$
 
-Backpropagate $\frac{dJ}{dz_1}$ to first hidden layer
+Finally, we backpropagate the gradient of the loss with respect to $z_1$:
 
-Since $\frac{dz_1}{dW_1} = X$ and $\frac{dJ}{dz_1} = (W_2^T \frac{dJ}{dz_2}) \circ \sigma\`(W_1 X^T + b_1)$, by chain rule, the gradients for $W_1$ and $b_1$,
+$\hspace{20pt}\frac{dJ}{dz_1} = (W_2^T \frac{dJ}{dz_2}) \circ \sigma\`(z_1)$
+
+Given that $\frac{dz_1}{dW_1} = X$, we apply the chain rule to compute the gradients for $W_1$ and $b_1$,
 
 $\hspace{20pt}\frac{dJ}{dW_1} = \frac{dJ}{dz_1} \frac{dz_1}{dW_1}$
 
