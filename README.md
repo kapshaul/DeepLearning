@@ -87,7 +87,7 @@ db1 = 2/batch_size * sum((W2' * (W3' * (error) .* ReLU_deriv(W2 * ReLU(W1 * x + 
 
 ### 1.3. Backpropagation
 
-To begin, we first backpropagate \frac{dJ}{d\hat{Y}},
+To begin, we first backpropagate $\frac{dJ}{d\hat{Y}}$,
 
 $\hspace{20pt}\frac{dJ}{d\hat{Y}} = \frac{2}{N} (\hat{Y} - Y)$
 
