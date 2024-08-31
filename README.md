@@ -91,7 +91,7 @@ $\hspace{20pt}\frac{dJ}{d\hat{Y}} = \frac{2}{N} (\hat{Y} - Y)$
 
 Since $\frac{d\hat{Y}}{dW_3} = \sigma(W_2 \sigma(W_1 X^T + b_1) + b_2)$, by chain rule, the gradients for $W_3$ and $b_3$,
 
-$\hspace{20pt} \frac{dJ}{d\hat{Y}} \frac{d\hat{Y}}{dW_3} = \frac{dJ}{dW_3} = \frac{2}{N} (\hat{Y} - Y) \sigma(W_2 \sigma(W_1 X^T + b_1) + b_2)^T$
+$\hspace{20pt}\frac{dJ}{dW_3} = \frac{dJ}{d\hat{Y}} \frac{d\hat{Y}}{dW_3}$
 
 $\hspace{20pt}\frac{dJ}{db_3} = \frac{2}{N} \sum_{i=1}^{N}{\hat{y}_i - y_i}$
 
@@ -99,17 +99,17 @@ Backpropagate $\frac{dJ}{dz_2}$ to second hidden layer
 
 Since $\frac{dz_2}{dW_2} = \sigma(W_1 X^T + b_1)$ and $\frac{dJ}{dz_2} = (W_3^T \frac{dJ}{d\hat{Y}}) \circ \sigma\`(W_2 \sigma(W_1 X^T + b_1) + b_2)$, by chain rule, the gradients for $W_2$ and $b_2$,
 
-$\hspace{20pt}\frac{dJ}{dz_2} \frac{dz_2}{dW_2} = \frac{dJ}{dW_2} = \frac{2}{N} (W_3^T (\hat{Y} - Y)) \circ \sigma\`(W_2 \sigma(W_1 X^T + b_1) + b_2) \sigma(W_1 X^T + b_1)^T$
+$\hspace{20pt}\frac{dJ}{dW_2} = \frac{dJ}{dz_2} \frac{dz_2}{dW_2}$
 
-$\hspace{20pt}\frac{dJ}{db_2} = \frac{2}{N} \sum_{i=1}^{N}((W_3^T (\hat{Y} - Y)) \circ \sigma\`(W_2 \sigma(W_1 X^T + b_1) + b_2))$
+$\hspace{20pt}\frac{dJ}{db_2} = \sum_{i=1}^{N}\frac{dJ}{dz_2}$
 
 Backpropagate $\frac{dJ}{dz_1}$ to first hidden layer
 
 Since $\frac{dz_1}{dW_1} = X$ and $\frac{dJ}{dz_1} = (W_2^T \frac{dJ}{dz_2}) \circ \sigma\`(W_1 X^T + b_1)$, by chain rule, the gradients for $W_1$ and $b_1$,
 
-$\hspace{20pt}\frac{dJ}{dz_1} \frac{dz_1}{dW_1} = \frac{dJ}{dW_1} = \frac{2}{N} (W_2^T (W_3^T (\hat{Y} - Y) \circ \sigma\`(W_2 \sigma(W1 X^T + b1) + b2))) \circ \sigma\`(W_1 X^T + b_1) X^T$
+$\hspace{20pt}\frac{dJ}{dW_1} = \frac{dJ}{dz_1} \frac{dz_1}{dW_1}$
 
-$\hspace{20pt}\frac{dJ}{db_1} = \frac{2}{N} \sum_{i=1}^{N}((W_2^T (W_3^T (\hat{Y} - Y) \circ \sigma\`(W_2 \sigma(W_1 X^T + b_1) + b_2))) \circ \sigma\`(W_1 X^T + b_1))$
+$\hspace{20pt}\frac{dJ}{db_1} = \sum_{i=1}^{N} \frac{dJ}{dz_1}$
 
 These expressions can be implemented in MATLAB code as follows,
 
