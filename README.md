@@ -88,7 +88,7 @@ One of the most important components of a neural network is the activation funct
 
 #### **PyTorch Model**
 
-The PyTorch implementation defines a custom model class and uses a training loop to optimize the model parameters. The code for this implementation can be found [here](#).
+The PyTorch implementation defines a custom model class and uses a training loop to optimize the model parameters. The code for this implementation can be found here.
 
 ```python
 class Model(torch.nn.Module):
