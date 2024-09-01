@@ -19,7 +19,7 @@ Deep learning is a powerful technique within the broader field of machine learni
 #### **Layers of the Network**
 
 - **Input Layer:** This is where the model receives its data.
-- **Hidden Layers:** These layers perform most of the work in the network. They apply activation functions to the input, transforming it in ways that enable the network to learn.
+- **Hidden Layers:** These layers apply activation functions to the input, transforming it in ways that enable the network to learn.
 - **Output Layer:** The final layer produces the network's prediction.
 
 ## Table of Contents
