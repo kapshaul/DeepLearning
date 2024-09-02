@@ -10,9 +10,9 @@ Deep learning is a powerful technique within the broader field of machine learni
 
 <div align="center">
     
-<img src="https://github.com/kapshaul/DeepLearning/blob/Basic/img/Sine_Prediction/deep_neural_network.jpg" width="500">
+<img src="https://github.com/kapshaul/DeepLearning/blob/Basic/img/deep_neural_network.jpg" width="500">
 
-**Figure 1**: A Neural Network
+**Figure 1**: A Fully Connected Neural Network
 
 </div>
 
