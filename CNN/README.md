@@ -4,7 +4,7 @@ A Convolutional Neural Network (CNN) analyzes images by learning filters that de
 
 <div align="center">
     
-<img src="https://github.com/kapshaul/DeepLearning/blob/CNN/img/CNN.jpeg" width="700">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/CNN.jpeg" width="700">
 
 **Figure 1**: A Convolutional Neural Network
 
@@ -29,9 +29,9 @@ A filter, or kernel, is a small matrix of weights in a CNN that detects specific
 
 <div align="center">
 
-<img src="https://github.com/kapshaul/DeepLearning/blob/CNN/img/filter1.png" width="400">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/filter1.png" width="400">
 
-<img src="https://github.com/kapshaul/DeepLearning/blob/CNN/img/filter2.png" width="400">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/filter2.png" width="400">
 
 **Figure 2**: CNN Filter
 
@@ -39,7 +39,7 @@ A filter, or kernel, is a small matrix of weights in a CNN that detects specific
 
 <div align="center">
 
-<img src="https://github.com/kapshaul/DeepLearning/blob/CNN/img/multi-filter.png" width="500">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/multi-filter.png" width="500">
 
 **Figure 3**: CNN Filters Producing Different Outputs
 
@@ -53,7 +53,7 @@ Stride refers to the step size with which the convolution filter moves across th
 
 <div align="center">
 
-<img src="https://github.com/kapshaul/DeepLearning/blob/CNN/img/stride.png" width="400">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/stride.png" width="400">
 
 **Figure 4**: Convolutional Stride
 
@@ -67,7 +67,7 @@ Padding involves adding extra pixels around the input data to control the spatia
 
 <div align="center">
 
-<img src="https://github.com/kapshaul/DeepLearning/blob/CNN/img/Padding.png" width="400">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/Padding.png" width="400">
 
 **Figure 5**: Padding the Input Data Before Applying Filters
 
@@ -81,7 +81,7 @@ Pooling is a downsampling operation that reduces the spatial dimensions of the i
 
 <div align="center">
 
-<img src="https://github.com/kapshaul/DeepLearning/blob/CNN/img/pooling.png" width="400">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/pooling.png" width="400">
 
 **Figure 6**: Pooling Layers
 
