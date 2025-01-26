@@ -4,7 +4,7 @@ A Recurrent Neural Network (RNN) processes sequential data by learning patterns 
 
 <div align="center">
     
-<img src="https://github.com/kapshaul/DeepLearning/blob/RNN/img/RNN.png" width="700">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/RNN/img/RNN.png" width="700">
 
 **Figure 1**: A Recurrent Neural Network
 
@@ -31,7 +31,7 @@ Long Short-Term Memory (LSTM) networks are a specialized type of Recurrent Neura
 
 <div align="center">
     
-<img src="https://github.com/kapshaul/DeepLearning/blob/RNN/img/LSTM.png" width="500">
+<img src="https://github.com/kapshaul/DeepLearning/blob/master/RNN/img/LSTM.png" width="500">
 
 **Figure 2**: A Long Short-Term Memory architecture
 
