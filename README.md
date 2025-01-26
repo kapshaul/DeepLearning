@@ -1,6 +1,6 @@
 # Convolutional Neural Network (CNN)
 
-A Convolutional Neural Network (CNN) is a specialized deep learning model that excels at analyzing visual data, like images. Instead of treating every pixel independently, CNNs scan images with filters to detect basic features, such as edges and textures, and then combine these to recognize more complex patterns as you go deeper into the network. This approach allows CNNs to understand the spatial relationships in data, making them particularly powerful for tasks like image recognition and object detection.
+A Convolutional Neural Network (CNN) analyzes images by learning filters that detect features like edges and textures. These filters build increasingly complex patterns layer by layer, enabling CNNs to recognize objects and understand spatial relationships, making them ideal for image-related tasks.
 
 <div align="center">
     
