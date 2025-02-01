@@ -27,6 +27,16 @@ A Convolutional Neural Network (CNN) analyzes images by learning filters that de
 A filter, or kernel, is a small matrix of weights in a CNN that detects specific characteristics within the input data, such as edges, textures, or patterns. During the convolution operation, the filter slides across the input (e.g., an image), performing element-wise multiplication and summing the results. Each filter is designed to capture unique features from the image.
 **Figure 3** illustrates how six different filters extract distinct characteristics from the same image.
 
+When an image is passed through a convolutional layer, the spatial dimensions of the output are determined using the following:
+
+```math
+O = ⌊(I - K + 2P) / S⌋ + 1
+```
+- **I**: Input size (height or width)
+- **K**: Kernel (filter) size
+- **P**: Padding (number of pixels added to each side of the input)
+- **S**: Stride (step size of the kernel)
+
 <div align="center">
 
 <img src="https://github.com/kapshaul/DeepLearning/blob/master/CNN/img/filter1.png" width="400">
